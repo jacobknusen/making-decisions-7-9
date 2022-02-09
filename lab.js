@@ -7,7 +7,13 @@
 */
 
 //CODE HERE
+let lovesCode = true 
 
+if (lovesCode === false ){
+  console.log('coding has its challenges')
+} else if (lovesCode === true){
+  console.log('i love coding')
+}
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
 var brittanisAge = 34
@@ -21,7 +27,13 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysAge > brittanisAge){
+  console.log(`amy is older!`);
+} else if (brittanisAge > amysAge){
+  console.log('brittani is older!')
+}else {
+  console.log('theyre the same age!')
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -30,11 +42,17 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysBirthYear === brittanisBirthYear){
+  console.log('they were born in the same year.');
+}else if ( amysBirthYear !== brittanisBirthYear){
+  console.log('they were not born the same year.')
+}else {
+  console.log('they havent been born yet!!!!!')
+}
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55
+let temperature = 80
 let rain = true
 
 /*
@@ -46,13 +64,31 @@ let rain = true
 
 
 ////////// PROBLEM 5 //////////
+if(temperature >=80 && rain === true){
+  console.log('one should wear a t-shirt and a umbrella! ')
 
+}if(temperature >=80 && rain === false){
+  console.log('one should wear a t-shirt and carry a surfboard!')
+}
+else if ( temperature >= 60 && temperature <= 80 && rain === true){
+  console.log('one should wear a rain-jacket!')
+} else if ( temperature >= 60 && temperature <= 80 && rain === false){
+  console.log('one should wear pants and a tee-shirt!')
+}
+else if ( temperature <= 60 && rain === true){
+  console.log('one should wear a jacket and carry an umbrella.')
+}else if ( temperature <= 60 && rain === false){
+  console.log('one should wear a jacket and boots. drink lots of soup ')
+}
 /*
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
 //CODE HERE
 
+for (let i = 0; i <10; i++){
+  console.log('hello world, this is jake the best coder ever!!!!')
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -61,7 +97,9 @@ let rain = true
 */
 
 //CODE HERE
-
+for (let i = 1; i <=10; i++){
+  console.log(i)
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -69,6 +107,12 @@ let rain = true
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
+
+
+
+for (let i = 10; i > -0; i--){
+  console.log(i)
+}
 //CODE HERE
 
 let score = 0
@@ -81,6 +125,12 @@ let passingScore = 7
 */
 
 //CODE HERE
+while ( score < passingScore){
+  console.log('Your score is not high enough')
+ score += 1
+}
+
+
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -90,6 +140,16 @@ let passingScore = 7
   Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
 
 */
+let changeMyMind = true
+
+if(changeMyMind === true){
+  changeMyMind=false;
+} else if  (changeMyMind === false) {
+  changeMyMind=true;
+}
+
+console.log(changeMyMind)
+
 
 //CODE HERE
 
@@ -108,3 +168,8 @@ let z = 5
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+while(z > 0){
+  console.log(z)
+  z -= 1
+}
